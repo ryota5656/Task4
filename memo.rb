@@ -18,7 +18,7 @@ loop do
  
  elsif memo_type == "2" then
    puts "2が選択されました"
-   puts "編集するファイル名を拡張子"
+   puts "編集するファイル名を拡張子を除いて入力してください"
    @addfilename = gets.chomp.to_s
    CSV.open("#{@addfilename}.csv","a")do |csv|
    puts "追加するメモを記入してください"
